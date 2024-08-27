@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jersey 10', sans-serif;
+    text-decoration: none;
+    background: White;
+
+}
+
+::selection{
+    background: darkgreen;
+    color: white;
+}
+body{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+}
+
+
+header{
+    position: center;
+    margin: 40px 0px 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 60px;
+    height: auto;
+    background: transparent;
+}
+header .titulo{
+    font-size: 70px;
+    margin-left: 10px;
+    color: darkgreen;
+    font-style:initial;
+    
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*background: url(./imagenes/fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+
+.procesador{
+    width: 60%;
+    margin: 100px 0px 0px 140px;
+    background: transparent;
+}
+
+.encriptar{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    resize: none;
+}
+.encriptar::placeholder,:focus{
+    color: darkgreen;
+}
+
+.advertencia_texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;   
+}
+
+.Imagen_alerta{
+    width: 60px;
+    height: auto;
+}
+
+.texto_alerta{
+    width: 100%;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.9;
+    color: green;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    position: inherit;
+}
+
+.boton_encriptar{
+    width: 328px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    height: 67px;
+    color: #FFFFFF;
+    background: darkgreen;
+    border: 1px solid gray;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 8);
+}
+.boton_encriptar:active{
+    box-shadow: Inset 2px 2px 4px white,
+    inset -3px -4px 8px darkgreen;
+    color: lightgreen;
+}
+
+.boton_desencriptar{
+    width: 328px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    height: 67px;
+    color: darkgreen;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 8);
+}
+.boton_desencriptar:active{
+    box-shadow: Inset 2px 2px 4px white,
+    inset -3px -4px 8px darkgreen;
+    color: green;
+}
+.boton_copiar:active{
+    box-shadow: Inset 2px 2px 4px white,
+    inset -3px -4px 8px darkgreen;
+    color: green;
+}
+.caja_resultado{
+    width: 270px;
+    height: 500px;
+    margin-top: 50px;
+    background: white;
+    box-shadow: 10px 24px 32px -8px gray;
+    position: relative;
+    text-align: center;
+    border-radius: 32px;
+}
+.caja_de_texto{
+    width: 250px;
+    margin: auto;
+    margin-top: 25%;
+    background: #FFFFFF;
+}
+.detective{
+    background: white;
+}
+.sin_mensaje{
+    font-style:normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: darkgreen;
+    background: #FFFFFF;
+}
+.submensaje{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: rgb(94, 173, 94);
+    background: #FFFFFF;
+}
+.caja_egreso{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: orangered;
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+.caja_egreso:focus{
+    outline: none;
+}
+.boton_copiar{
+    width: 220px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton_copiar:hover,
+.boton_desencriptar:hover,
+.boton_encriptar:hover{
+    transform: scale(0.9);
+}
+
+footer{
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid white;
+    color: gray;
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: darkgreen;
+}
+.linkedin{
+    height: 30px;
+    width: auto;
+}
+
+.linkedin:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+.GitHub{
+    height: 25px;
+    width: 25px;
+}
+
+.GitHub:hover{
+    color:white;
+    opacity: 0.8;
+}
+
+
+/*-----------------------------------------*/
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .procesador{
+        margin: 80px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        width: 100%;
+    }
+    .botones{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+    .advertencia_texto{
+        position: inherit;
+        margin: 15px;
+    }
+    .caja_resultado{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .caja_de_texto{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        bottom: 20%;
+        font-size: 24px;
+        margin-top: 0px;
+    }
+    .detective{
+        height: 200px;
+    }
+    .boton_copiar{
+        width: 100%;
+    }
+    .caja_egreso{
+        width: 100%;
+        height: 210%;
+        padding: 10px;
+    }
+    header .titulo{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 720px){
+    header .logo{
+        width: 20px;
+        background: white;
+    }
+    header .titulo{
+        font-size: 100%;
+        background: white;
+    }
+    .encriptar{
+        margin: 0px 0px 0px 0px;
+        width: 90%;
+        font-size: 24px;
+    }
+    .botones{
+        display: grid ;
+        gap: 21px;
+    }
+    .caja_resultado{
+        width: 90%;
+    }
+    .derechos{
+        font-size: 20px;
+    }
+    
+}

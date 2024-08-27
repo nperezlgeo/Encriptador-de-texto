@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="Image/x-icon" href="./imagenes/señal.png">
+    <title>Challenge Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo_cabeza.png" alt="Logo Encriptador" class="logo">
+        <p class="titulo">Encriptador de texto Oracle Nicolas Perez Luna</p>
+    </header>
+    <main>
+        <section class="procesador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="advertencia_texto">
+                <img src="/imagenes/señal.png" alt="Imagen alerta" class="Imagen_alerta">
+                <p class="texto_alerta">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button type="submit" class="boton_encriptar">Encriptar</button>
+                <button type="submit" class="boton_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="caja_resultado">
+            <div class="caja_de_texto">
+                <img src="./imagenes/detective.png" alt="Imagen detective" class="detective">
+                <p class="sin_mensaje">No hay texto procesado </p>
+                <p class="submensaje">Ingrese en mensaje en la caja de texto a la izquierda</p>
+            </div>
+            <textarea type="mensaje" class="caja_egreso" readonly></textarea>
+            <button type="submit" class="boton_copiar">Copiar resultado</button>
+        </section>       
+    </main>
+    <footer>
+        <p class="derechos">&copy;copyright 2024 - Encriptador de texto - Desarrollado por Nicolas Perez Luna</p>
+        <a href="#" rel="">
+            <img src="./imagenes/linkedin-logo.png" alt="linkedin logo" class="linkedin">
+        </a>
+        <a href="#" rel="">
+            <img src="./imagenes/logo_github.png" alt="Gihub Logo" class="GitHub">
+        </a>
+    </footer>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
